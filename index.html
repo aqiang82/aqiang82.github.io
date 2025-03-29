@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    /* 添加加载动画的样式 */
+    .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+  </style>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
@@ -29,10 +51,11 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>filter_virtual_coins</title>
+  <title>择时筛选VIP</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <div class="loader"></div>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
