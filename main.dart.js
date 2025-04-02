@@ -36291,7 +36291,9 @@ q=Math.max(m,A.b3(s==null?"0":s))
 m=p.b
 m=A.b3(m==null?"0":m)
 s=p.e
-a.f=A.k(q-(q-Math.min(m,A.b3(s==null?"0":s)))*0.5)}},
+m=(q-Math.min(m,A.b3(s==null?"0":s)))*0.5
+if(a.b)a.f=A.k(q-m)
+else a.f=A.k(q+m)}},
 ru(){var s,r,q=this
 q.TF()
 s=q.ax
