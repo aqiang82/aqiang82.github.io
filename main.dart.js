@@ -30145,7 +30145,7 @@ if(this.aN(a,b)<0)return b
 if(this.aN(a,c)>0)return c
 return a},
 a3(a,b){var s
-if(b>20)throw A.f(A.bQ(b,0,20,"fractionDigits",null))
+if(b<0||b>20)throw A.f(A.bQ(b,0,20,"fractionDigits",null))
 s=a.toFixed(b)
 if(a===0&&this.gre(a))return"-"+s
 return s},
@@ -36202,99 +36202,103 @@ J.Rr(o,a6)
 p.fh$.j3(p.gv())
 return A.N(null,r)}})
 return A.O($async$oM,r)},
-NB(a,b){var s,r,q,p,o=b[0],n=b[1],m=b[2],l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
+NB(a,b){var s,r,q,p,o,n,m=b[0],l=b[1],k=b[2],j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
 r=!1
-if(l>A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-if(l>A.b3(s==null?"":s)){l=m.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l>A.b3(s==null?"":s)){l=m.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l>A.b3(s==null?"":s)}else l=r}else l=r}else l=r
-if(l){a.b=!0
-l=o.f
-l=A.b3(l==null?"":l)
-s=m.f
-if(!(l>A.b3(s==null?"":s))){l=n.f
-l=A.b3(l==null?"":l)
-s=m.f
-l=l>A.b3(s==null?"":s)}else l=!0
-if(l)a.d=!0}l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
+if(j>A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+if(j>A.b3(s==null?"":s)){j=k.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j>A.b3(s==null?"":s)){j=k.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j>A.b3(s==null?"":s)}else j=r}else j=r}else j=r
+if(j){a.b=!0
+j=m.f
+j=A.b3(j==null?"":j)
+s=k.f
+if(!(j>A.b3(s==null?"":s))){j=l.f
+j=A.b3(j==null?"":j)
+s=k.f
+j=j>A.b3(s==null?"":s)}else j=!0
+if(j)a.d=!0}j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
 r=!1
-if(l<A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-if(l<A.b3(s==null?"":s)){l=m.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l<A.b3(s==null?"":s)){l=m.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l<A.b3(s==null?"":s)}else l=r}else l=r}else l=r
-if(l){a.c=!0
-l=o.f
-l=A.b3(l==null?"":l)
-s=m.f
-if(!(l>A.b3(s==null?"":s))){l=n.f
-l=A.b3(l==null?"":l)
-s=m.f
-l=l>A.b3(s==null?"":s)}else l=!0
-if(l)a.d=!0}l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l>A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l>A.b3(s==null?"":s)}else l=!1
-if(l){a.e="\u4e0a\u6446"
-l=o.f
-l=A.b3(l==null?"":l)
-s=n.f
-if(l>A.b3(s==null?"":s))a.e="\u4e0a\u6446(vol)"}l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l<A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l<A.b3(s==null?"":s)}else l=!1
-if(l){a.e="\u4e0b\u6446"
-l=o.f
-l=A.b3(l==null?"":l)
-s=n.f
-if(l>A.b3(s==null?"":s))a.e="\u4e0b\u6446(vol)"}l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l<A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l>A.b3(s==null?"":s)}else l=!1
-if(l)a.e="\u5b55\u7ebf"
-l=o.c
-l=A.b3(l==null?"":l)
-s=n.c
-if(l>A.b3(s==null?"":s)){l=o.d
-l=A.b3(l==null?"":l)
-s=n.d
-l=l<A.b3(s==null?"":s)}else l=!1
-if(l)a.e="\u5916\u5305\u7ebf"
-if(a.b||a.c){l=o.b
-l=A.b3(l==null?"0":l)
-s=o.e
-q=Math.max(l,A.b3(s==null?"0":s))
-l=o.b
-l=A.b3(l==null?"0":l)
-s=o.e
-p=Math.min(l,A.b3(s==null?"0":s))
-l=(q-p)*0.5
-if(a.b)a.f=A.k(q-l)
-else a.f=A.k(p+l)}},
+if(j<A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+if(j<A.b3(s==null?"":s)){j=k.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j<A.b3(s==null?"":s)){j=k.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j<A.b3(s==null?"":s)}else j=r}else j=r}else j=r
+if(j){a.c=!0
+j=m.f
+j=A.b3(j==null?"":j)
+s=k.f
+if(!(j>A.b3(s==null?"":s))){j=l.f
+j=A.b3(j==null?"":j)
+s=k.f
+j=j>A.b3(s==null?"":s)}else j=!0
+if(j)a.d=!0}j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j>A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j>A.b3(s==null?"":s)}else j=!1
+if(j){a.e="\u4e0a\u6446"
+j=m.f
+j=A.b3(j==null?"":j)
+s=l.f
+if(j>A.b3(s==null?"":s))a.e="\u4e0a\u6446(vol)"}j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j<A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j<A.b3(s==null?"":s)}else j=!1
+if(j){a.e="\u4e0b\u6446"
+j=m.f
+j=A.b3(j==null?"":j)
+s=l.f
+if(j>A.b3(s==null?"":s))a.e="\u4e0b\u6446(vol)"}j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j<A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j>A.b3(s==null?"":s)}else j=!1
+if(j)a.e="\u5b55\u7ebf"
+j=m.c
+j=A.b3(j==null?"":j)
+s=l.c
+if(j>A.b3(s==null?"":s)){j=m.d
+j=A.b3(j==null?"":j)
+s=l.d
+j=j<A.b3(s==null?"":s)}else j=!1
+if(j)a.e="\u5916\u5305\u7ebf"
+if(a.b||a.c){j=m.e
+q=j==null?null:A.c(j.split("."),t.s)
+j=q==null?null:q.length
+p=(j==null?0:j)>=2?q[1].length:0
+j=m.b
+j=A.b3(j==null?"0":j)
+s=m.e
+o=Math.max(j,A.b3(s==null?"0":s))
+j=m.b
+j=A.b3(j==null?"0":j)
+s=m.e
+n=Math.min(j,A.b3(s==null?"0":s))
+j=(o-n)*0.5
+if(a.b)a.f=B.d.a3(o-j,p)
+else a.f=B.d.a3(n+j,p)}},
 ru(){var s,r,q=this
 q.TF()
 s=q.ax
